@@ -1,0 +1,16 @@
+<view class="contaner">
+  <view class="contaner-list" wx:for="{{content}}" wx:for-item="itemName">
+    <block wx:if="{{itemName.video_uri}}">
+      <view class="box">
+        <text class="box-title">{{itemName.text}}</text>
+        <video class="box-video" src="{{itemName.video_uri}}"></video>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="box">
+        <text class="box-title">{{itemName.text}}</text>
+        <image mode="widthFix" class="box-img" src="{{itemName.image0}}"></image>
+      </view>
+    </block>
+  </view>
+</view>

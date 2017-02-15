@@ -1,0 +1,30 @@
+<view class="contaner">
+  <view class="contaner-list" wx:for="{{content}}" wx:for-item="itemName">
+    <block wx:if="{{itemName.havePic}}">
+      <block wx:if="{{itemName.imageurls.length<3}}">
+        <view class="box">
+          <text class="box-title">{{itemName.title}}</text>
+          <view class="img-box">
+            <image class="box-img" src="{{itemName.imageurls[0].url}}"></image>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="box">
+          <text class="third-box-title">{{itemName.title}}</text>
+          <view class="third-img-box">
+            <image class="third-box-img third-box-img1" src="{{itemName.imageurls[0].url}}"></image>
+            <image class="third-box-img third-box-img2" src="{{itemName.imageurls[1].url}}"></image>
+            <image class="third-box-img third-box-img3" src="{{itemName.imageurls[2].url}}"></image>
+          </view>
+        </view>
+      </block>
+    </block>
+    <block wx:else>
+      <view class="box">
+        <text class="text-title">{{itemName.title}}</text>
+        <text class="text-data">{{itemName.pubDate}}</text>
+      </view>
+    </block>
+  </view>
+</view>

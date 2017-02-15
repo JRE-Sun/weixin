@@ -1,0 +1,39 @@
+/* pages/index/index.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.contaner {
+  width: 100%;
+  height: 100%;
+}
+
+.contaner .contaner-list {
+  margin: 0 15px;
+}
+
+.contaner .contaner-list .box {
+  /*margin: 15px 0;*/
+  margin-top: 15px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.contaner .contaner-list .box .box-title {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-top: -15px;
+}
+
+
+
+.contaner .contaner-list .box .box-img {
+  margin-top: 10px;
+  display: block;
+  float: left;
+}
+

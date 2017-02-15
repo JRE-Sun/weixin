@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "今日头条lite",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "selectedIconPath": "images/ta.png",
+        "iconPath": "images/t.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "selectedIconPath": "images/va.png",
+        "iconPath": "images/v.png"
+      }
+    ],
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06"
+  }
+}
