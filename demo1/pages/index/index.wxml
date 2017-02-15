@@ -1,0 +1,20 @@
+
+<!-- sample.wxml -->
+<view class="containter">
+  <scroll-view class="chat-list" scroll-y="true" scroll-top="100">
+    <view wx:for="{{content}}" wx:for-item="itemName">
+      <block wx:if="{{itemName.flag}}">
+        <text class="name ab">我</text>
+        <text class="ab txt-color">{{itemName.con}}</text>
+      </block>
+      <block wx:else>
+        <text class="name b">聊天机器人</text>
+        <text class="b txt-color">{{itemName.con}}</text>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="section">
+    <input bindinput="bindKeyInput" />
+    <button bindtap="send" hover-class="send-activ" class="send" type="default">发送</button>
+  </view>
+</view>

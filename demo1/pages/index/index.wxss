@@ -1,0 +1,96 @@
+page {
+  height: 98%;
+  background: #fbf9fe;
+}
+
+.containter {
+  width: 100%;
+  height: 100%;
+  /*background: #FBF9FE;*/
+}
+
+.containter .chat-list {
+  width: calc(100% - 20px);
+  height: calc(100% - 48px);
+  /*background: #FBF9FE;*/
+  margin: 10px;
+}
+
+.containter .section {
+  width: 100%;
+  height: 40px;
+  display: block;
+  position: relative;
+  border-top: 1px solid #e7e5e9;
+}
+
+.containter .section input {
+  /*background: red;*/
+  height: 40px;
+  /*padding: 5px;*/
+}
+
+.containter .section .send {
+  height: 40px;
+  width: 60px;
+  background: #1aac19;
+  /*padding: 5px;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  color: white;
+  border-radius: 0;
+  padding: 0;
+}
+
+.containter .section .send-activ {
+  height: 40px;
+  width: 60px;
+  background: #ccc;
+  /*padding: 5px;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  color: white;
+  border-radius: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 12px;
+  display: block;
+  color: #999;
+}
+
+.ab {
+  clear: both;
+  display: block;
+  float: right;
+  margin-right: 10px;
+  /*text-align: right;*/
+}
+
+.b {
+  clear: both;
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.txt-color {
+  margin-top: 5px;
+  display: block;
+  word-wrap: break-word;
+  word-break: normal;
+  white-space: normal;
+  background: #d8e8f9;
+  max-width: 80%;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "微软雅黑", "宋体";
+}
